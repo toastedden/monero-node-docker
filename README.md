@@ -16,7 +16,7 @@ This configuration is optimized for a Raspberry Pi 5 4GB.
 Make sure to check the branches menu for additional CPU architectures.
 
 ```bash
-git clone https://github.com/toastedden/monero-node-docker.git
+git clone -b linux-ARMv8 https://github.com/toastedden/monero-node-docker.git
 cd monero-node-docker
 ```
 
