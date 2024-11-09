@@ -1,13 +1,13 @@
 # Dockerized Monero Node
 
 A Dockerized Monero node setup for quickly deploying and running a Monero full node. This container includes the Monero daemon `monerod` to sync and maintain the Monero blockchain, with configuration options for persistence and port forwarding.
-This configuration is optimized for a Raspberry Pi 5 4GB.
+This configuration is optimized for a Raspberry Pi 4 or older models.
 
-## Requirements (For `ARMv8`)
+## Requirements (For `ARMv7`)
 
 - Docker
 - Docker Compose
-- ~90 GB of free SSD space
+- ~90 GB of free SSD or SD card space
 
 ## Getting Started
 
@@ -16,7 +16,7 @@ This configuration is optimized for a Raspberry Pi 5 4GB.
 Make sure to check the branches menu for additional CPU architectures.
 
 ```bash
-git clone https://github.com/toastedden/monero-node-docker.git
+git clone -b linux-ARMv7 https://github.com/toastedden/monero-node-docker.git
 cd monero-node-docker
 ```
 
