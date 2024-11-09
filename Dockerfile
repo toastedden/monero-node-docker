@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install -y \
     bzip2
 
 # Download Monero CLI for ARMv8
-RUN curl -L -o monero-cli.tar https://downloads.getmonero.org/cli/linuxarmv8
+RUN curl -L -o monero-cli.tar https://downloads.getmonero.org/cli/linuxarm8
 
 # Extract the Monero CLI tar file and move its contents to the monero directory
 RUN tar --strip-components=1 -xvf monero-cli.tar -C /home/monero
