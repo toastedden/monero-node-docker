@@ -7,7 +7,7 @@ This configuration is optimized for a Raspberry Pi 5 4GB.
 
 - Docker
 - Docker Compose
-- ~90 GB of free SSD space
+- ~90 GB of free SSD or SD Card space
 
 ## Getting Started
 
