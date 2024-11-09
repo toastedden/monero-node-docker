@@ -1,0 +1,14 @@
+services:
+  monero_node:
+    container_name: monero_node # Name of the container
+    environment:
+      - PUID=1000
+      - PGID=1000
+    build:
+      context: . # This tells Docker Compose to use the Dockerfile in the current directory
+    ports: # Used to allow the monero node to connect to peers
+      - "18080:18080/tcp"
+      - "18081:18081/tcp"
+    volumes:
+      - ./data:/home/monero/data # Mount data directory
+    restart: unless-stopped # Restart the container unless it is explicitly stopped
